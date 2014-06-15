@@ -84,6 +84,10 @@ max_interval
 ## 104      835 206.2
 ```
 
+The interval with the most steps is 835.  
+It has 206.2 steps.
+
+
 ## Imputing missing values
 
 Note that there are a number of days/intervals where there are missing values (coded as NA). The presence of missing days may introduce bias into some calculations or summaries of the data.
@@ -95,6 +99,10 @@ Note that there are a number of days/intervals where there are missing values (c
 3. Create a new dataset that is equal to the original dataset but with the missing data filled in.
 
 4. Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
+
+### Strategy Explaination
+My strategy for inputing missing data is to replace the NA with the mean for that interval.
+This is done with an input.mean function applied inside the ddply summarization. 
 
 
 ```r
@@ -160,6 +168,8 @@ m
 ```
 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+
+There are 2304 intervals with missing step data.
 
 Beacause so many steps where filled in with the median fo the interval, The mean and the median are now the same. They are also both higher than before. We no longer see days with zero steps. This was skewing the data to under report the average number of steps per day.
 
