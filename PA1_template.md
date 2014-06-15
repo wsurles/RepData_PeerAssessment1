@@ -1,7 +1,8 @@
-## Reproducible Research: Peer Assessment 1
+# Reproducible Research: Peer Assessment 1
 
 
-# Loading and preprocessing the data
+## Loading and preprocessing the data
+
 1. Load the data (i.e. read.csv())
 
 2. Process/transform the data (if necessary) into a format suitable for your analysis
@@ -24,7 +25,7 @@ str(df)
 ```
 
 
-# What is mean total number of steps taken per day?
+## What is mean total number of steps taken per day?
 
 For this part of the assignment, you can ignore the missing values in the dataset.
 
@@ -55,7 +56,7 @@ m
 The mean is 9354 steps.  
 The median is 10395 steps.
 
-# What is the average daily activity pattern?
+## What is the average daily activity pattern?
 
 1. Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
 
@@ -83,7 +84,7 @@ max_interval
 ## 104      835 206.2
 ```
 
-# Imputing missing values
+## Imputing missing values
 
 Note that there are a number of days/intervals where there are missing values (coded as NA). The presence of missing days may introduce bias into some calculations or summaries of the data.
 
@@ -164,7 +165,7 @@ Beacause so many steps where filled in with the median fo the interval, The mean
 
 Again the mean is shown in **<span style="color:red;">Red</span>** and the median is shown in **<span style="color:blue;">Blue</span>**.
 
-# Are there differences in activity patterns between weekdays and weekends?
+## Are there differences in activity patterns between weekdays and weekends?
 
 For this part the weekdays() function may be of some help here. Use the dataset with the filled-in missing values for this part.
 
